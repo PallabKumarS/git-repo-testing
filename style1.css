@@ -1,0 +1,25 @@
+ #t1 {
+     margin: 0px;
+ }
+
+ .h1 {
+     cursor: url(Assets/emoji.png), auto;
+ }
+ .container{
+    display: flex;
+    justify-content: space-around;
+ }
+.box{
+    width: fit-content;
+    background-color: blueviolet;
+    padding: 20px;
+}
+.box2{
+    background-color: green;
+}
+.box3{
+    background-color: yellow;
+}
+.box4{
+    background-color: purple;
+}
