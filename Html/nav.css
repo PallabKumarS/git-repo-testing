@@ -1,0 +1,24 @@
+nav {
+    background-image: url(Assets/backiee-33749.jpg);
+    height: 200px;
+    color: violet;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    padding: 5px;
+    margin: 10px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgb(43, 255, 1);
+}
+
+nav li:hover {
+    background-color: red;
+}
