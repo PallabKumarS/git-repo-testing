@@ -6,6 +6,9 @@
     <title>Document</title>
     <style>
         label {display: block;margin-top: 10px;}
+        .clear-input-container{
+            display: inline-block;position: relative;
+        }
     </style>
 </head>
 <body>
@@ -15,6 +18,12 @@
     <main>
 
     </main>
+    <form class="clear-input-container">
+        search for image:
+        <input class="clear-input" type="text">
+        <button class="clear-input-button" type="reset" aria-label="Clear input" title="Clear input">×</button>
+    </form><br>
+    <img src="../Assets/Kung fu panda.jpeg" alt="">
     <section>  
         <h2>Fill up the form</h2>
         <form action="">
@@ -56,9 +65,12 @@
             <fieldset>
                 <legend>Special type</legend>
                 <textarea name="" id="" cols="30" rows="10">this is textarea.fill up any form then reset at bottom</textarea>
-            </fieldset>
+            </fieldset> <br>
+            Date:
+            <input type="date" name="" id=""> <br> <br>
             <input type="reset" value="type Reset">
             <input type="submit" value="type Submit">
+            
         </form>
     </section>
 </body>

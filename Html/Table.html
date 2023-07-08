@@ -4,19 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
+    <style>
+        table,th,td {
+            border: 1px solid black;
+        }
+        .bold{
+            font-weight: bold;
+        }
+        td{
+            border: 1px solid black;padding: 5px;
+        }
+    </style>
 </head>
 <body>
     
     <h1>HTML Table</h1>
     <table>
+        <caption>Tournament Schedule and Results</caption>
         <thead>
-
+            <tr>
+                <td>Round 1</td>
+                <td>Player A</td>
+                <td>Player B</td>
+            </tr>
         </thead>
         <tbody>
-
+            <tr>
+                <td>Match1</td> <td>John</td> <td>Alice</td>
+            </tr>
+            <tr>
+                <td>Match2</td><td>Mark</td><td>Sarah</td>
+            </tr>
+            <tr class="bold">
+                <td>Round 2</td><td>Player C</td><td>Player D</td>
+            </tr>
+            <tr>
+                <td>Match3</td><td>TBD</td><td>TBD</td>
+            </tr>
+            <tr>
+                <td>Match4</td><td>TBD</td><td>TBD</td>
+            </tr>
+            <tr class="bold">
+                <td>Final</td><td>Winner of Match 3</td><td>Winner of Match 4</td>
+            </tr>
         </tbody>
         <tfoot>
-            
+            <tr>
+                <td>Champion</td><td>TBD</td><td>TBD</td>
+            </tr>
         </tfoot>
     </table>
 </body>
