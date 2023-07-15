@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Practice</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            background-color: #ffffff;
+            width: 100vw;
+        }
+        h1{
+            text-align: center;
+            color: aqua;
+        }
+        h3{
+            text-align: center;
+            color: brown;
+        }
+        .div1{
+            background-color: blueviolet;
+            width: 100%;
+        }
+        .div2,.div3,.div4{
+            background-color: cornflowerblue;
+            width: 100%;
+        }
+        
+        .grid1{
+            height: 20%;
+            display: grid;
+            grid-template-columns:repeat(4,1fr);
+            gap: 10px;
+            border: 2px solid greenyellow;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 5%;
+        }
+        .div11{
+            background-color: blueviolet;
+            width: 100%;
+        }
+        .div21,.div31,.div41{
+            background-color: cornflowerblue;
+            width: 100%;
+        } 
+        .grid11{
+            height: 30vh;
+            display: grid;
+            grid-template-columns:repeat(4,1fr);
+            /* grid-template-rows:repeat(1,1fr); */
+            gap: 10px;
+            border: 2px solid rgb(206, 47, 255);
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 5%;
+        }
+        /* another  */
+        .div111{
+            background-color: blueviolet;
+            width: 100%;
+        }
+        .div211,.div311,.div411{
+            background-color: cornflowerblue;
+            width: 100%;
+        }
+        .grid111{
+            height: 30vh;
+            display: grid;
+            grid-template-columns:repeat(4,1fr);
+            /* grid-template-rows:repeat(1,1fr); */
+            gap: 10px;
+            border: 2px solid rgb(255, 47, 64);
+            border-radius: 10px;
+            padding: 10px;
+        }
+        @media screen and (min-width: 768px) {
+            .div111{
+            grid-column-start: span 2;
+            grid-row-start: span 3;
+        }
+        .div211{
+            grid-column-start: 3;
+            grid-column-end: span 2;
+            grid-row-start: span 2;
+        }
+        .div311{
+            grid-column-start: 3;
+        }
+        .div411{
+            grid-column-start: 4;
+        }
+        .div11{
+            grid-area: div11;
+        }
+        .div21{
+            grid-area: div21;
+        }
+        .div31{
+            grid-area: div31;
+        }
+        .div41{
+            grid-area: div41;
+        }
+        .grid11{
+            grid-template-areas:
+            "div11 div11 div21 div21"
+            "div11 div11 div21 div21"
+            "div11 div11 div31 div41"
+            "div11 div11 div31 div41";
+        }
+        }
+        @media screen and (max-width:768px){
+            .grid1,.grid11,.grid111{
+                grid-template-columns:1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="grid1">
+       <div class="div1">
+        <h1>Grid learning and responsive website layout.</h1>
+       </div>
+       <div class="div2">
+        <h3>grid is two dimensional whereas flex is one dimensional.</h3>
+        </div>
+       <div class="div3">
+        <h3>different type of mouse hover can be used. <br>
+            like: Visited,Focus,::placeholder</h3>
+       </div>
+        <div class="div4">
+            <h3>Image position can be used as Static,Relative,Absolute,Fixed,Sticky <br>
+            z-index is used to command to which image will show on top of other</h3>
+        </div>
+    </section>
+    <!-- doing something more complicated -->
+    <section class="grid11">
+       <div class="div11 large">
+        <h1>Grid learning and responsive website layout. <br>
+        Did this one using grid area</h1>
+       </div>
+       <div class="div21 large">
+        <h3>grid is two dimensional whereas flex is one dimensional.</h3>
+        </div>
+       <div class="div31">
+        <h3>different type of mouse hover can be used. <br>
+            like: Visited,Focus,::placeholder</h3>
+       </div>
+        <div class="div41 large">
+            <h3>Image position can be used as Static,Relative,Absolute,Fixed,Sticky <br>
+            z-index is used to command to which image will show on top of other</h3>
+        </div>
+    </section>
+    <!-- doing something more complicated in a different way -->
+    <section class="grid111">
+       <div class="div111 large">
+        <h1>Grid learning and responsive website layout. <br>
+        Did this one using grid column row start end</h1>
+       </div>
+       <div class="div211 large">
+        <h3>grid is two dimensional whereas flex is one dimensional.</h3>
+        </div>
+       <div class="div311 large">
+        <h3>different type of mouse hover can be used. <br>
+            like: Visited,Focus,::placeholder</h3>
+       </div>
+        <div class="div411 large">
+            <h3>Image position can be used as Static,Relative,Absolute,Fixed,Sticky <br>
+            z-index is used to command to which image will show on top of other</h3>
+        </div>
+    </section>
+</body>
+</html>
