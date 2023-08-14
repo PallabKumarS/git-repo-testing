@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js DOM Events</title>
+</head>
+
+<body>
+    <h1 onclick="console.log('I am Clicked')">Dom er kisu ekta kisu ekta</h1>
+    <button title="Click kore dekh na!" onclick="console.log('lav nai re chodu')">Click Meh!</button>
+    <button onclick="document.body.style.backgroundColor='yellow'">Color Change</button>
+    <h3 id="handled-text">Some Text</h3>
+    <button id="handler-btn">Touch Meh!</button>
+
+    <p id="changed-text">Eibar Info Churi Koram</p>
+    <input id="input-text" type="text">
+    <button id="input-btn">Update</button>
+
+    <!-- ekhane comment add korbo -->
+    <div id="comment-container">
+        <p>kisu ekta comment</p>
+        <p>grrrrrrrrrrrrrrrrrrrr</p>
+    </div>
+
+    <textarea name="" id="comment-text" cols="30" rows="10"></textarea> <br>
+    <button id="comment-btn">Post</button>
+
+    <div>
+        <h1>Do you want to delete something?</h1>
+        <input type="text" id="confirm-text" placeholder="Type Confirm">
+        <button id="confirm-btn" disabled>Confirm</button>
+    </div>
+
+    <h1>aaro kichu ja shikci</h1>
+    <ul id="ul-list">
+        <li class="item">testing1</li>
+        <li class="item">testing2</li>
+        <li class="item">testing3</li>
+        <li class="item">testing4</li>
+        <li class="item">testing5</li>
+        <li class="item">testing6</li>
+    </ul> <br>
+    <button id="add-btn">Add</button>
+
+    <script src="../Dom/dom-event1.js"></script>
+</body>
+
+</html>
